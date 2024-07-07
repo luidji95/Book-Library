@@ -1,13 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <title>Book Library</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+</head>
+<body>
+    
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-button" id="closeFormButton">&times;</span>
+            <form id="bookForm">
+                <div class="form-book">
+                    <label for="title">Title of the book:</label>
+                    <input type="text" id="title" class="inputall" name="title" placeholder="Harry Poter" required>
+                </div>
+
+                <div class="form-book">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" class="inputall" name="author" placeholder="J.K. Rowling" required>
+                </div>
+               
+                <div class="form-book">
+                    <label for="pages">Number of pages:</label>
+                    <input type="number" id="pages" class="inputall" name="pages" min="1" step="1" placeholder="500" required>
+                    
+                </div>
+               
+                <div class="form-book">
+                    <div class="read-or-not">
+                        <input type="checkbox" id="read" name="read">
+                        <label for="read">Have you read this book?</label>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+                
+
+                
+            </form>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1 class="book-library">Book library</h1>
+        <p class="parag">Use the button below to add to your library and watch your collection grow</p>
+        <button class="new-book-button">New Book  📘</button>
+    </section>
+
+    <section class="books">
+        <ul class="book-list" id="book-list">
+           
+        </ul>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
 </html>
