@@ -1,7 +1,10 @@
 *{
+  
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
@@ -48,6 +51,11 @@ body{
     border-color: lightgreen;
     border-width: 3px;
 }
+/* .footer{
+    color: white;
+    font-size: 16px;
+} */
+
 .overlay{
     position: fixed;
     z-index: 1;
@@ -87,4 +95,80 @@ body{
     cursor: pointer;
     color:white;
     font-size: 50px;
+}
+
+.form-book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#bookForm{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; 
+    align-items: center; */
+    gap:30px;
+}
+.inputall{
+    border-radius: 15px;
+    padding: 7px;
+    width: 350px;
+    border: none;
+}
+.submit-button{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border: 3px solid lightblue;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.submit-button:hover{
+    border-style: solid;
+    border-color: lightgreen;
+    border-width: 3px;
+}
+.read-or-not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.books{
+    padding-top: 50px;
+}
+.book-list{
+  display: flex;
+  gap:20px;
+
+}
+li{
+    background-color: #dee2e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 300px;
+    gap:20px;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+}
+.buttonDelete{
+    position: relative;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border: 3px solid lightblue;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
 }
