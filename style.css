@@ -172,3 +172,77 @@ li{
     border-radius: 25px;
     transition: all 0.4s ease-in-out;
 }
+
+.button-checkRead{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border: 3px solid lightblue;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+}
+.editBook{
+    color:black;
+    /* display: flex;
+    justify-content: end;
+    align-items: end; */
+    padding-right: 20px;
+    cursor: pointer;
+}
+.edit{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.editBook:hover{
+    color:teal;
+}
+.form {
+    background-color: #dee2e6;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    gap:20px;
+    max-width: 400px;
+    align-items: center;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 300px;
+    gap: 15px;
+
+}
+.inpt{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+}
+.button-ok{
+    position: relative;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: 3px solid lightblue;
+    border-radius: 25px;
+    transition: all 0.4s ease-in-out;
+    width: 50%;
+}
+
+.display{
+    display: none;
+}
